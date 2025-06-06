@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gokul Venkadasamy">
+    <meta name="description" content="Discover recipes from around the world using ingredients you have. Smart recipe finder with search and filters.">
+    <meta name="keywords" content="recipe finder, cooking app, food recipes, meal planner, ingredients search, Gokul Venkadasamy">
+    <title>🍜 Recipe Finder App</title>
+    <script src="https://kit.fontawesome.com/dce3bc69ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-utensils"></i> Recipe Finder</h1>
+            <p>Discover delicious recipes from around the world</p>
+        </header>
+        <div class="api-link-div">
+            <p class="api-link">Data from <a href="https://www.themealdb.com/">TheMealDB 🧑‍🍳<i class="fa-solid fa-user-chef"></i> </a></p>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-box" placeholder="Search for meals . . .">
+            <button id="search-btn">Search</button>
+        </div>
+        <div id="error-container" class="hidden">
+            <p>No meals found. Please try another search term!</p>
+        </div>
+        <div id="result-heading">
+
+        </div>
+        <div id="meals" class="meals-container">
+
+        </div>
+        <div id="meal-details" class="hidden">
+            <button id="back-btn"> <i class="fa-solid fa-arrow-left"></i> Back to recipes</button>
+            <div class="meal-details-content"></div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
